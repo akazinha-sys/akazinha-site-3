@@ -44,4 +44,4 @@ Para adicionar um lançamento, copie um bloco em `releases` dentro de `data/site
 - `components/SiteHeader.tsx` — menu (abre/fecha com clique, Esc e clique fora)
 - `components/RevealObserver.tsx` — animação de revelar ao rolar
 - `app/layout.tsx` — SEO, Open Graph, fontes
-- `app/sitemap.ts` e `app/robots.ts` — gerados automaticamente
+- `app/sitemap.ts` e `app/robots.ts` — gerados automaticamente1
