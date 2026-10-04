@@ -1,3 +1,4 @@
+import ReleaseCarousel from '../components/ReleaseCarousel'
 import RevealObserver from '../components/RevealObserver'
 import SiteHeader from '../components/SiteHeader'
 import { instagramPosts, platforms, releases, site, streamingLinks, studio } from '../data/site'
@@ -31,8 +32,8 @@ export default function Home() {
           </div>
           <div className="hero-content">
             <div className="hero-logo-line">
-              <img src="/logo-z.png" alt="" className="hero-mark" />
-              <h1>AKAZinha</h1>
+              {/* <img src="/logo-z.png" alt="" className="hero-mark" /> */}
+              <h1>akazinha</h1>
             </div>
             <p className="eyebrow">MÚSICA&nbsp;&nbsp; / &nbsp;&nbsp;PRODUÇÃO&nbsp;&nbsp; / &nbsp;&nbsp;CRIAÇÃO</p>
             <a className="text-link" href="#musicas">▶ &nbsp; OUVIR AGORA</a>
@@ -41,12 +42,12 @@ export default function Home() {
         </section>
 
         <section id="musicas" className="releases section-dark section-border reveal">
-          <div className="section-intro reveal reveal-delay-1">
+          <div className="section-intro reveal" style={{ '--i': 1 } as React.CSSProperties}>
             <span className="section-label">ÚLTIMOS LANÇAMENTOS</span>
             <h2>SOM<br />QUE VEM<br />DE DENTRO.</h2>
             <a className="text-link" href={allReleasesHref} target="_blank" rel="noreferrer">VER TODOS&nbsp; →</a>
           </div>
-          <div className="release-grid reveal reveal-delay-2">
+          <ReleaseCarousel revealIndex={2}>
             {releases.map((release) => {
               const links = streamingLinks(release)
               const main = links[0]
@@ -88,7 +89,7 @@ export default function Home() {
                 </article>
               )
             })}
-          </div>
+          </ReleaseCarousel>
         </section>
 
         <section id="sobre" className="about section-border reveal">
@@ -97,7 +98,8 @@ export default function Home() {
           </div>
           <div className="about-copy section-dark">
             <span className="section-label">SOBRE</span>
-            <h2>AKAZinha</h2>
+            {/* <h2>AKAZinha</h2> */}
+            <h2 className="about-title">akazinha</h2>
             <p>
               AKAZinha é um espaço de criação. Música, produção, ideias e projetos que nascem dentro e fora do estúdio.
             </p>

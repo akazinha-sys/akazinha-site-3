@@ -5,6 +5,7 @@ Home da AKAZinha.wav (preto/branco). Requer Node.js 20+.
 ```bash
 npm install
 npm run dev
+npm run deploy:vinext
 ```
 
 Abra http://localhost:3000

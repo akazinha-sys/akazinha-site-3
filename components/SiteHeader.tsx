@@ -46,7 +46,7 @@ export default function SiteHeader() {
     <header className="site-header" ref={headerRef}>
       <a className="brand" href="#inicio" onClick={closeMenu} aria-label="AKAZinha — início">
         <img src="/logo-z.png" alt="" className="brand-mark" width={47} height={38} />
-        <span>AKAZinha</span>
+        {/* <span>AKAZinha</span> */}
       </a>
 
       <button

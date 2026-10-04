@@ -15,7 +15,7 @@ export type Links = {
 export const site = {
   name: 'AKAZinha', // nome rodape
   url: 'https://akazinha.com', // domínio final (usado em SEO, sitemap e preview de link)
-  description: 'AKAZinha.wav — música, produção, estúdio e criação. Esteio, RS.',
+  description: 'AKAZinha — música, produção, estúdio e criação. Esteio, RS.',
   email: 'contato@akazinha.com',
   location: 'Esteio — RS',
   whatsapp: '', // ex.: 'https://wa.me/5551999999999'
